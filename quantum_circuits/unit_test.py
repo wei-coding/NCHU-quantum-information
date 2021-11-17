@@ -1,5 +1,8 @@
-from utils.logics import CNOTGate
+from utils.logics import CNOTGate, Simulator
 
-c = CNOTGate(0, 1, 1, 2)
+sim = Simulator([
+    # CNOTGate([1, 1, 2]),
+    CNOTGate([-1, 1, 2])
+])
 
-print(c.run(0, 1, 1, 0))
+print(sim.run())
