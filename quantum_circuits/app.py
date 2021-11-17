@@ -14,19 +14,19 @@ def index():
 def simulate():
     r = request.values["logicgates"]
     ori = request.values["logicgates"]
-    print(r)
+    # print(r)
 
     # run simulator
     gates_string = r.strip().split("\n")
     for i in range(len(gates_string)):
         gates_string[i] = gates_string[i].strip()
-    print(gates_string)
+    # print(gates_string)
     gates = []
     for gate_string in gates_string:
         gates_param = [int(g) for g in gate_string.split(" ")]
-        print(gates_param)
+        # print(gates_param)
         gates.append(CNOTGate(gates_param))
     sim = Simulator(gates)
     r = sim.run()
-    print(ori)
+    # print(ori)
     return render_template('index.html', truth_table=r, original_gates=ori)
