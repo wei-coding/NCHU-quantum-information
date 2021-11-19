@@ -7,5 +7,5 @@
     margin: 10px 5px;
 }
 #output, #graph{
-    font-family: consolas;
+    font-family: consolas, Courier New;
 }
