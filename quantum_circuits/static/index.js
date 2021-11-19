@@ -1,11 +1,19 @@
+function auto_height(elementId) {
+    obj = document.getElementById(elementId);
+    obj.style.height = "auto";
+    obj.style.height = (obj.scrollHeight + 10) + "px";
+}
+
 btn_clear = document.getElementById('btn-clear');
 btn_clear.addEventListener('click', function () {
     gates_input = document.getElementById('logic-gates');
     gates_input.value = "";
     output = document.getElementById('output');
     output.value = "";
-    output.style.height = "auto";
-    output.style.height = (output.scrollHeight + 10) + "px";
+    graph = document.getElementById('graph');
+    graph.value = "";
+    auto_height('output');
+    auto_height('graph');
 });
 
 btn_run = document.getElementById('btn-run');
@@ -47,6 +55,5 @@ btn_run.addEventListener('click', function () {
     }
 })
 
-output = document.getElementById('output');
-output.style.height = "auto";
-output.style.height = (output.scrollHeight + 10) + "px";
+auto_height('output');
+auto_height('graph');

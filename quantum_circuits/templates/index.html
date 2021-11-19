@@ -11,17 +11,19 @@
 
 <body>
     <div class="container">
-        <h2>量子布林電路模擬-CNOT</h2><br>
+        <h3>量子布林電路模擬-CNOT</h3><br>
         <div class="row">
             <div class="col">
                 <form method="post" action="/" id="gates-form">
-                    <h3><label for="logic-gates" class="form-label">Gates</label></h3>
+                    <h4>
+                        <label for="logic-gates" class="form-label">Gates</label>
+                    </h4>
                     <textarea id="logic-gates" class="form-control" style="height: 200px"
                         name="logicgates">{{original_gates}}</textarea>
                 </form>
             </div>
             <div class="col">
-                <h3>說明:</h3>
+                <h4>說明:</h4>
                 <p>
                     每一行代表一個邏輯閘，以<strong>空格</strong>分隔在每個bit上的作用元件<br>
                     其中:<br>
@@ -43,8 +45,12 @@
         </div>
         <div class="row">
             <div class="col">
-                <h3>結果顯示</h3>
+                <h4>結果顯示</h4>
                 <textarea class="form-control" readonly="true" id="output">{{truth_table}}</textarea>
+            </div>
+            <div class="col">
+                <h4>邏輯閘視覺化</h4>
+                <textarea class="form-control" readonly="true" id="graph">{{graph}}</textarea>
             </div>
         </div>
     </div>
