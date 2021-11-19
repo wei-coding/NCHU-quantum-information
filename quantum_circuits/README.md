@@ -10,7 +10,7 @@ flask run
 或是直接使用docker版本
 
 ```shell=
-sudo docker run -it weisdocker0830/quantum_simulator -p 5000:5000
+sudo docker run -it -p 5000:5000 weisdocker0830/quantum_simulator
 ```
 
 於瀏覽器中直接開啟 http://localhost:5000 即可看到GUI
