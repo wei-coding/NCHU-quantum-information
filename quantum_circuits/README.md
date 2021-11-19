@@ -10,7 +10,7 @@ flask run
 或是直接使用docker版本
 
 ```shell=
-docker run -it weisdocker0830/quantum_simulator -p 5000:5000
+sudo docker run -it weisdocker0830/quantum_simulator -p 5000:5000
 ```
 
 於瀏覽器中直接開啟 http://localhost:5000 即可看到GUI
@@ -31,3 +31,11 @@ docker run -it weisdocker0830/quantum_simulator -p 5000:5000
 
 於Gates框內輸入上述格式的字串後按下`開始計算`即可輸出真值表，程式內建格式檢查
 清除按下`清除所有結果`即可
+
+## 處理邏輯
+
+<img src="static/img/flowchart.png" width="60%">
+
+## 程式截圖
+
+<img src="static/img/screenshot.png" width="100%">
