@@ -61,9 +61,10 @@ class Simulator:
     def get_graph(self):
         r = []
         mapping = {
-            0: "○",
-            1: "●",
-            2: "+"
+            0: " ○ ",
+            1: " ● ",
+            2: " + ",
+            3: "---"
         }
         for n in range(self.n_bits):
             r.append(f"q{n} --")

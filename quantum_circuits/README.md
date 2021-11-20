@@ -39,3 +39,5 @@ sudo docker run -it -p 5000:5000 weisdocker0830/quantum_simulator
 ## 程式截圖
 
 <img src="static/img/screenshot.png" width="100%">
+
+**註: 因"⊕"符號無法等寬顯示，因此改由"+"替代**
