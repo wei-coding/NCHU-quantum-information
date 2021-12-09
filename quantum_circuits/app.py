@@ -32,4 +32,4 @@ def simulate():
     return render_template('index.html', truth_table=r, original_gates=ori, graph=sim.get_graph())
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
